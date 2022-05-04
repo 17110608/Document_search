@@ -1,502 +1,532 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation</title>
-<style>
-body {
-  background-color: #e6fff8;
-}
+<html>
 
-@keyframes bgc{
-    0%{
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+  <style>
+    body {
+      background-color: #e6fff8;
+    }
+
+    @keyframes bgc {
+      0% {
         color: #b50e8e;
-		background-color: #fcdcf5;
-    }
-	25%{
+        background-color: #fcdcf5;
+      }
+
+      25% {
         color: #c2840a;
-		background-color: #b50e8e;
-    }
-	50%{
+        background-color: #b50e8e;
+      }
+
+      50% {
         color: #4d8f10;
-		background-color: #e2f5d0;
-    }
-	75%{
+        background-color: #e2f5d0;
+      }
+
+      75% {
         color: #12a159;
-		background-color: #4d8f10;
-    }
-    100%{
+        background-color: #4d8f10;
+      }
+
+      100% {
         color: #129099;
-		background-color: #cbf4f7;
+        background-color: #cbf4f7;
+      }
     }
-}
 
-@keyframes tp{
-    0%{
+    @keyframes tp {
+      0% {
         opacity: 0;
-    }
-	25%{
+      }
+
+      25% {
         opacity: 0.25;
-    }
-	50%{
+      }
+
+      50% {
         opacity: 0.5;
-    }
-	75%{
+      }
+
+      75% {
         opacity: 0.75;
-    }
-    100%{
+      }
+
+      100% {
         opacity: 1;
+      }
     }
-}
 
-nav {
-  display: flex;
-  list-style: none;
-  font-weight: bold;
-  background-color: #bbeef0;
-  padding: 20px;
-  border-radius: 6px;
-  margin-bottom: 4px;
-}
+    nav {
+      display: flex;
+      list-style: none;
+      font-weight: bold;
+      background-color: #bbeef0;
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 4px;
+    }
 
-div {
-  width: 15%;
-  height: 520px;
-  padding-top: 10px;
-  color: #0e473b;
-  padding-bottom: 10px;
-  text-align: justify;
-  overflow-y: scroll;
-}
+    div {
+      width: 20vw;
+      height: 520px;
+      padding-top: 10px;
+      color: #0e473b;
+      padding-bottom: 10px;
+      text-align: justify;
+      overflow-y: scroll;
+      overflow-x: auto;
+    }
 
-.border {
-    border: 4px solid transparent;
-	border-image: url("https://cdn-icons-png.flaticon.com/128/346/346167.png") 30 round;
-	outline-style: double;
-	outline-color: yellow;
-	border-radius: 4px;
-	margin-left: 50px;
-	padding: 10px;
-	margin-bottom: 25px;
-}
+    .border {
+      border: 4px solid transparent;
+      border-image: url("https://cdn-icons-png.flaticon.com/128/346/346167.png") 30 round;
+      outline-style: double;
+      outline-color: yellow;
+      border-radius: 4px;
+      margin-left: 50px;
+      padding: 10px;
+      margin-bottom: 25px;
+      overflow-x: auto;
+    }
 
-b{
-	color: #0e473b;
-	padding: 4px;
-	float: left;
-	font-size: 30px;
-}
+    b {
+      color: #0e473b;
+      padding: 4px;
+      float: left;
+      font-size: 3vmin;
+    }
 
-img {
-	width: 300px;
-	height: 300px;
-	margin: 10px;
-	float: left;
-}
+    img {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      float: left;
+    }
 
-.full {
-	height: 100% !important;
-	width: 90% !important;
-}
+    .full {
+      height: 100% !important;
+      width: 90% !important;
+    }
 
-nav > li {
-  margin-left: 20px;
-  font-size: 25px;
-  font-weight: bold;
-  color: #0e8387;
-}
+    nav>li {
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #0e8387;
+    }
 
-ul > li {
-  position: relative;
-  font-weight: bold;
-  line-height: 1.8;
-  font-size: 25px;
-  margin-top: 20px;
-  color: #0e8387;
-}
+    ul>li {
+      position: relative;
+      font-weight: bold;
+      line-height: 1.8;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #0e8387;
+    }
 
-li:hover {
-  color: #d60270;
-  border: 2px dotted orange;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+    li:hover {
+      color: #d60270;
+      border: 2px dotted orange;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
 
-.left {
-  float: left;
-}
+    .left {
+      float: left;
+    }
 
-.noscroll {
-  overflow: hidden;
-  width: 85%;
-  height: 100%;
-}
+    .noscroll {
+      width: 75%;
+      height: 100%;
+      overflow-y: hidden;
+    }
 
-p {
-  color: #0e473b;
-  margin-left: 50px;
-  font-size: 20px;
-}
+    p {
+      color: #0e473b;
+      margin-left: 50px;
+      font-size: 3vmin;
+    }
 
-h1 {
-	
-	text-align: center;
-	color: #c226ff;
-	border-radius: 5px;
-	margin-left: 10px;
-}
+    h1 {
 
-h2 {
-   text-decoration: underline;
-   color: #ff008c;
- }
- 
-h3 {
-   text-decoration: underline;
-   color: #0033ff;
-}
+      text-align: center;
+      color: #c226ff;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
 
-h3:hover {
-   cursor: pointer;
-   }
-   
-.img {
-    width:25px;
-	height:20px;
-	content: url("https://cdn-icons-png.flaticon.com/128/892/892662.png");
-}
+    h2 {
+      text-decoration: underline;
+      color: #ff008c;
+    }
 
-button {
-float: right;
-margin: 5px;
-color: blue;
-font-size: 30px;
-font-weight: bold;
-background-color: #a8ffcf;
-border-radius: 5px;
-border-color: red;
-}
+    h3 {
+      text-decoration: underline;
+      color: #0033ff;
+    }
 
-button:hover {
-color: lime;
-background-color: #ff00c3;
-border-color: lime;
-}
+    h3:hover {
+      cursor: pointer;
+    }
 
-input[type=text] {
-width: 250px;
-height: 30px;
-color: #0a085e;
-border-color: red;
-border-radius: 5px;
-margin-left: 25px;
-}
+    .img {
+      width: 25px;
+      height: 20px;
+      content: url("https://cdn-icons-png.flaticon.com/128/892/892662.png");
+    }
 
-input[type=submit] {
-width: 65px;
-height: 35px;
-color: #0a085e;
-font-weight: bold;
-background-color: #d1d0f5;
-border-color: #0a085e;
-margin-left: 25px;
-border-radius: 5px;
-}
+    button {
+      float: right;
+      margin: 5px;
+      color: blue;
+      font-size: 3vmin;
+      font-weight: bold;
+      background-color: #a8ffcf;
+      border-radius: 5px;
+      border-color: red;
+    }
 
-::placeholder {
-background-color: #fff;
-color: #000;
-}
+    button:hover {
+      color: lime;
+      background-color: #ff00c3;
+      border-color: lime;
+    }
 
-#tp1 {
-  display:none;
-}
+    input[type=text] {
+      width: 250px;
+      height: 30px;
+      color: #0a085e;
+      border-color: red;
+      border-radius: 5px;
+      margin-left: 25px;
+    }
 
-#tp1:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    input[type=submit] {
+      width: 65px;
+      height: 35px;
+      color: #0a085e;
+      font-weight: bold;
+      background-color: #d1d0f5;
+      border-color: #0a085e;
+      margin-left: 25px;
+      border-radius: 5px;
+    }
 
-#tp2 {
-  display:none;
-}
+    ::placeholder {
+      background-color: #fff;
+      color: #000;
+    }
 
-#tp2:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp1 {
+      display: none;
+    }
 
-#tp3 {
-  display:none;
-}
+    #tp1:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-#tp3:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp2 {
+      display: none;
+    }
 
-#tp4 {
-  display:none;
-}
+    #tp2:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-#tp4:target {
-   display: block;
-   animation: tp 3s forwards;
-}
-#tp5 {
-  display:none;
-}
+    #tp3 {
+      display: none;
+    }
 
-#tp5:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp3:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-#tp6 {
-  display:none;
+    #tp4 {
+      display: none;
+    }
 
-}
+    #tp4:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-#tp6:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp5 {
+      display: none;
+    }
 
-#tp7 {
-  display:none;
-}
+    #tp5:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-#tp7:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp6 {
+      display: none;
 
-#tp8 {
-  display:none;
-}
+    }
 
-#tp8:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp6:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-#tp9 {
-  display:none;
-}
+    #tp7 {
+      display: none;
+    }
 
-#tp9:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp7:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-#tp10 {
-  display:none;
-}
+    #tp8 {
+      display: none;
+    }
 
-#tp10:target {
-   display: block;
-   animation: tp 3s forwards;
-}
+    #tp8:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
+    #tp9 {
+      display: none;
+    }
 
-::-webkit-scrollbar-track {
-  box-shadow: inset 0px 0px 2px blue;
-  border-radius: 10px;
-  padding: 4px;
-}
+    #tp9:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
 
-::-webkit-scrollbar-thumb {
-  width: 4px;
-  background-color: green;
-  border-radius: 10px;
-}
+    #tp10 {
+      display: none;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: lime;
-}
-</style>
-  </head>
-  <body>
-    <nav>
-      <li onclick="window.open('https://apexit.com','_blank');">Home</li>
-      <li onclick="window.open('https://apexit.com/who-we-are','_blank');">About Us</li>
-      <li onclick="window.open('https://apexit.com/contact-us','_blank');">Contact Us</li>
-	  <form method="get" action="https://google.co.in">
-	  <input type="text" placeholder="Search Your Query" name="q" autocomplete="off" required>
-	  <input type="submit" value="Search">
-	  </form>
-    </nav>
-    <div class="left">
-      <ul>
-        <li onclick="location.href='#tp1'">Topic 1</li>
-        <li onclick="location.href='#tp2'">Topic 2</li>
-        <li onclick="location.href='#tp3'">Topic 3</li>
-        <li onclick="location.href='#tp4'">Topic 4</li>
-        <li onclick="location.href='#tp5'">Topic 5</li>
-        <li onclick="location.href='#tp6'">Topic 6</li>
-        <li onclick="location.href='#tp7'">Topic 7</li>
-        <li onclick="location.href='#tp8'">Topic 8</li>
-        <li onclick="location.href='#tp9'">Topic 9</li>
-		<li onclick="location.href='#tp10'">Topic 10</li>
-      </ul>
+    #tp10:target {
+      display: block;
+      animation: tp 3s forwards;
+    }
+
+    pre {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <li onclick="window.open('https://apexit.com','_blank');">Home</li>
+    <li onclick="window.open('https://apexit.com/who-we-are','_blank');">About Us</li>
+    <li onclick="window.open('https://apexit.com/contact-us','_blank');">Contact Us</li>
+    <form method="get" action="https://google.co.in">
+      <input type="text" placeholder="Search Your Query" name="q" autocomplete="off" required>
+      <input type="submit" value="Search">
+    </form>
+  </nav>
+  <div class="left">
+    <ul>
+      <li onclick="location.href='#tp1'">CSS-Color</li>
+      <li onclick="location.href='#tp2'">CSS-Transform</li>
+      <li onclick="location.href='#tp3'">CSS-Float</li>
+      <li onclick="location.href='#tp4'">CSS-Border</li>
+      <li onclick="location.href='#tp5'">CSS-Font</li>
+      <li onclick="location.href='#tp6'">CSS-Align</li>
+      <li onclick="location.href='#tp7'">CSS-Tooltip</li>
+      <li onclick="location.href='#tp8'">CSS-Shadow</li>
+      <li onclick="location.href='#tp9'">CSS-Transition</li>
+      <li onclick="location.href='#tp10'">CSS-Masking</li>
+    </ul>
+  </div>
+  <div class="noscroll">
+    <h1> Nature Photos (Select topic to view photos)</h1>
+
+    <div id="tp1" class="noscroll full border">
+      <b>1)</b>
+      <img src="https://wallpaperaccess.com/full/2817799.jpg">
+      <h2> CSS-Color: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp2'"><img class="img">Next</button>
     </div>
-    <div class="noscroll">
-	<h1> Nature Photos (Select topic to view photos)</h1>
-	
-	  <div id="tp1" class="noscroll full border">
-	 <b>1)</b>
-	 <img src="https://wallpaperaccess.com/full/2817799.jpg">
-	 <h2> Topic 1: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+    <div id="tp2" class="noscroll full border">
+      <b>2)</b>
+      <img src="https://miro.medium.com/max/1199/1*Aun6linSD0w9TXmLHwSulw.jpeg">
+      <h2> CSS-Transform: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
 
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-</p>
-<button onclick="location.href='#tp2'"><img class="img">Next</button>
-</div>
-	<div id="tp2" class="noscroll full border">
-	 <b>2)</b>
-	 <img src="https://miro.medium.com/max/1199/1*Aun6linSD0w9TXmLHwSulw.jpeg">
-	 <h2> Topic 2: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp3'"><img class="img">Next</button>
-	</div>
-	<div id="tp3" class="noscroll full border">
-	 <b>3)</b>
-	 <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg">
-	 <h2> Topic 3: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp4'"><img class="img">Next</button>
-	</div>
-	<div id="tp4" class="noscroll full border">
-	 <b>4)</b>
-	 <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg">
-	 <h2> Topic 4: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp5'"><img class="img">Next</button>
-	</div>
-	<div id="tp5" class="noscroll full border">
-	 <b>5)</b>
-	 <img src="https://www.wallartprints.com.au/blog/wp-content/uploads/2017/10/hummingbird-nature-pictures-98278440.jpg">
-	 <h2> Topic 5: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp6'"><img class="img">Next</button>
-	</div>
-	<div id="tp6" class="noscroll full border">
-	 <b>6)</b>
-	 <img src="https://images-na.ssl-images-amazon.com/images/I/51MuSPzAScL.jpg">
-	 <h2> Topic 6: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp7'"><img class="img">Next</button>
-	</div>
-	<div id="tp7" class="noscroll full border">
-	 <b>7)</b>
-	 <img src="https://www.naturespicsonline.com/system/carousel_image/file/194/1.jpg">
-	 <h2> Topic 7: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp8'"><img class="img">Next</button>
-	</div>
-	<div id="tp8" class="noscroll full border">
-	 <b>8)</b>
-	 <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2018/07/nature-photography.jpg">
-	 <h2> Topic 8: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp9'"><img class="img">Next</button>
-	</div>
-	<div id="tp9" class="noscroll full border">
-	 <b>9)</b>
-	 <img src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/03/landscape-photography-tips-4.jpg?fit=1500%2C908&ssl=1">
-	 <h2> Topic 9: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp10'"><img class="img">Next</button>
-	</div>
-	<div id="tp10" class="noscroll full border">
-	 <b>10)</b>
-	 <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg">
-	 <h2> Topic 10: </h2>
-	<p>
-Many times, when rookie photographers get their very first camera and want to experiment, they are told to go outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled). 
-<pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
-And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
-
-While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
-</pre>
-What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation, both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is not a coincidence that this type of photography is among the most popular ones with art collectors as well.
-	</p>
-	<button onclick="location.href='#tp1'"><img class="img">Start</button>
-	</div>
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp3'"><img class="img">Next</button>
     </div>
-  </body>
+    <div id="tp3" class="noscroll full border">
+      <b>3)</b>
+      <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg">
+      <h2> CSS-Float: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp4'"><img class="img">Next</button>
+    </div>
+    <div id="tp4" class="noscroll full border">
+      <b>4)</b>
+      <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg">
+      <h2> CSS-Align: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp5'"><img class="img">Next</button>
+    </div>
+    <div id="tp5" class="noscroll full border">
+      <b>5)</b>
+      <img
+        src="https://www.wallartprints.com.au/blog/wp-content/uploads/2017/10/hummingbird-nature-pictures-98278440.jpg">
+      <h2> CSS-Tooltip: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp6'"><img class="img">Next</button>
+    </div>
+    <div id="tp6" class="noscroll full border">
+      <b>6)</b>
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51MuSPzAScL.jpg">
+      <h2> Topic 6: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp7'"><img class="img">Next</button>
+    </div>
+    <div id="tp7" class="noscroll full border">
+      <b>7)</b>
+      <img src="https://www.naturespicsonline.com/system/carousel_image/file/194/1.jpg">
+      <h2> Topic 7: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp8'"><img class="img">Next</button>
+    </div>
+    <div id="tp8" class="noscroll full border">
+      <b>8)</b>
+      <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2018/07/nature-photography.jpg">
+      <h2> Topic 8: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp9'"><img class="img">Next</button>
+    </div>
+    <div id="tp9" class="noscroll full border">
+      <b>9)</b>
+      <img
+        src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/03/landscape-photography-tips-4.jpg?fit=1500%2C908&ssl=1">
+      <h2> CSS-Transition: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp10'"><img class="img">Next</button>
+    </div>
+    <div id="tp10" class="noscroll full border">
+      <b>10)</b>
+      <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg">
+      <h2> Topic 10: </h2>
+      <p>
+        Many times, when rookie photographers get their very first camera and want to experiment, they are told to go
+        outside (unless they already know they’re into stuff that doesn’t move and that can be easily controlled).
+        <pre>The truth is that the outdoors holds many pleasant surprises for those in pursuit of a great shot because the wonders of our natural habitat are simply endless. 
+       And so, if you’re a landscape enthusiast, or in love with the wildlife, or plants, or all of it together, you’re bound to engage in nature photography, one of the medium’s most beautiful, but also most challenging genres. 
+
+        While it does involve landscape shots, nature photography mostly refers to all the breathtaking images of animals and plants you keep seeing in the National Geographic magazine or the Wildlife Photographer of the Year competition exhibitions. 
+       </pre>
+        What’s instantly clear from seeing these nature photography shots is the fact they require a lot of preparation,
+        both physical and mental endurance, patience and attention, which is exactly what makes them so valuable - it is
+        not a coincidence that this type of photography is among the most popular ones with art collectors as well.
+      </p>
+      <button onclick="location.href='#tp1'"><img class="img">Start</button>
+    </div>
+  </div>
+</body>
+
 </html>
